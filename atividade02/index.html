@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Banana - Cadastro</title>
+</head>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+
+    <center>
+        <img src="./public/hospital-banana-2.png" alt="Hospital Banana" width="200">
+
+        <h1>Cadastro de Usuário</h1>
+        <hr>
+        <br>
+    </center>
+
+    <form name="form1" action="./receptor.php" method="post">
+        <label for="nome">Nome Completo: </label>
+        <input id="nome" type="text" name="nome" placeholder="Digite seu nome">
+
+        <br>
+        <br>
+
+        <label for="idade">Idade: </label>
+        <input id="idade" type="number" min="0" max="200" name="idade" placeholder="Digite sua idade">
+
+        <br>
+        <br>
+
+        <label for="telefone">Telefone para Contato: </label>
+        <input id="telefone" type="tel" name="telefone" placeholder="Digite seu telefone"
+            pattern="^(55)?(?:([1-9]{2})?)(\d{4,5})(\d{4})$">
+
+        <br>
+        <br>
+
+        <label for="nascimento">Nascimento: </label>
+        <input id="nascimento" type="date" name="nascimento">
+
+        <br>
+        <br>
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="email" placeholder="Digite seu email">
+
+        <br>
+        <br>
+
+        <label for="senha">Senha: </label>
+        <input id="senha" type="password" name="senha" placeholder="Digite sua senha">
+
+        <br>
+        <br>
+
+        <label for="senha">Confirme sua senha: </label>
+        <input id="senha" type="password" name="senha" placeholder="Digite sua senha">
+
+        <br>
+        <br>
+
+        <label for="cor">Cor da Pele: </label>
+        <input id="cor" type="color" name="cor">
+
+        <br>
+        <br>
+
+        <label>Planos:</label>
+        <br>
+        <span>
+            <i>Confira a tabela de planos <a href="#tabela-precos">clicando aqui</a></i>
+        </span>
+        <br>
+        <input type="radio" id="plano-broto" name="plano" value="plano-broto">
+        <label for="plano-broto">Plano Broto - R$</label> <br>
+        <input type="radio" id="plano-cacho" name="plano" value="plano-cacho">
+        <label for="plano-cacho">Plano Cacho</label> <br>
+        <input type="radio" id="plano-bananada-premium" name="plano" value="plano-bananada-premium">
+        <label for="plano-bananada-premium">Plano Bananada Premium</label>
+
+        <br>
+        <br>
+
+        <label for="nivel">Nivel:</label>
+        <input type="range" id="nivel" name="nivel" min="0" max="10" step="1">
+
+        <br>
+        <br>
+
+        <input type="file" id="curriculo" name="curriculo">
+
+        <br>
+        <br>
+
+        <label for="estado">Selecione seu Estado: </label>
+        <br>
+        <label>
+            <i>
+                Obs: Lembre-se que não possuimos cobertura para todos os estados.
+            </i>
+        </label>
+        <br>
+        <select id="estado" name="estado">
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espirito Santo</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="mensagem">Observações:</label> <br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Insira observações sobre você, como se possui algum problema familiar, pessoal, se possui
+            alergia a algum medicamento, alimento, etc.." required></textarea>
+
+        <br>
+        <br>
+
+        <input type="checkbox" id="aceite" name="aceite" value="sim" required>
+        <label for="aceite">Aceite os Termos</label>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <center id="tabela-precos">
+        <h2>Tabela de Preços</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Faixa Etária</th>
+                    <th>&#127820; Plano Broto (Enfermaria)</th>
+                    <th>&#127820; Plano Cacho (Apartamento)</th>
+                    <th>&#127820; Plano Bananada Premium (Suíte Master + Serviços Exclusivos)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>0 - 18 anos</strong></td>
+                    <td>R$ 380,00</td>
+                    <td>R$ 620,00</td>
+                    <td>R$ 1.450,00</td>
+                </tr>
+                <tr>
+                    <td><strong>19 - 23 anos</strong></td>
+                    <td>R$ 450,00</td>
+                    <td>R$ 730,00</td>
+                    <td>R$ 1.710,00</td>
+                </tr>
+                <tr>
+                    <td><strong>24 - 28 anos</strong></td>
+                    <td>R$ 540,00</td>
+                    <td>R$ 880,00</td>
+                    <td>R$ 2.050,00</td>
+                </tr>
+                <tr>
+                    <td><strong>29 - 33 anos</strong></td>
+                    <td>R$ 630,00</td>
+                    <td>R$ 1.020,00</td>
+                    <td>R$ 2.380,00</td>
+                </tr>
+                <tr>
+                    <td><strong>34 - 38 anos</strong></td>
+                    <td>R$ 710,00</td>
+                    <td>R$ 1.150,00</td>
+                    <td>R$ 2.680,00</td>
+                </tr>
+                <tr>
+                    <td><strong>39 - 43 anos</strong></td>
+                    <td>R$ 850,00</td>
+                    <td>R$ 1.370,00</td>
+                    <td>R$ 3.200,00</td>
+                </tr>
+                <tr>
+                    <td><strong>44 - 48 anos</strong></td>
+                    <td>R$ 1.050,00</td>
+                    <td>R$ 1.700,00</td>
+                    <td>R$ 3.970,00</td>
+                </tr>
+                <tr>
+                    <td><strong>49 - 53 anos</strong></td>
+                    <td>R$ 1.280,00</td>
+                    <td>R$ 2.070,00</td>
+                    <td>R$ 4.850,00</td>
+                </tr>
+                <tr>
+                    <td><strong>54 - 58 anos</strong></td>
+                    <td>R$ 1.550,00</td>
+                    <td>R$ 2.500,00</td>
+                    <td>R$ 5.860,00</td>
+                </tr>
+                <tr>
+                    <td><strong>59 anos ou +</strong></td>
+                    <td>R$ 2.250,00</td>
+                    <td>R$ 3.630,00</td>
+                    <td>R$ 8.500,00</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+    </center>
+
+    <hr>
+    <br>
+
+    <footer>
+        <center>
+            &copy; 2024 - Hospital Banana
+        </center>
+        <br>
+    </footer>
+
+</body>
+
+</html>
