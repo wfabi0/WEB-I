@@ -1,0 +1,18 @@
+nav {
+  background-color: black;
+  padding: 15px;
+}
+
+header {
+  background-color: chartreuse;
+}
+
+main {
+  background-color: azure;
+}
+
+footer {
+  background-color: black;
+  padding: 15px;
+  color: aliceblue;
+}
