@@ -17,3 +17,11 @@ body {
   margin: 0;
   padding: 25px;
 }
+
+.caixa_botoes {
+  border: 1px solid salmon;
+  padding: 25px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-width: 3px;
+}
