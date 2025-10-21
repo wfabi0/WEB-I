@@ -15,7 +15,24 @@ body {
 
   border: 2px dashed saddlebrown;
   margin: 0;
-  padding: 25px;
+  padding: 0px;
+}
+
+header {
+  border: 0.4px solid gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  /* border: 1px solid burlywood; */
+  margin: 15px;
+}
+
+footer {
+  border: 1px solid wheat;
 }
 
 .caixa_botoes {
