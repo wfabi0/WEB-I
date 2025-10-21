@@ -16,10 +16,16 @@ body {
   border: 2px dashed saddlebrown;
   margin: 0;
   padding: 0px;
+
+  background-image: url("https://wallpapers.com/images/featured/imagem-de-fundo-yeaxrij2aepc1xio.jpg");
 }
 
 header {
   border: 0.4px solid gray;
+}
+
+* {
+  color: white;
 }
 
 h1 {
