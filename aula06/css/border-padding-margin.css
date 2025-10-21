@@ -1,0 +1,19 @@
+body {
+  /* Desnecessário configurar separado */
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-color: blueviolet;
+  border-right-color: blueviolet;
+  border-bottom-color: blueviolet;
+  border-left-color: blueviolet;
+  border-top-style: dotted;
+  border-right-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: dotted;
+
+  border: 2px dashed saddlebrown;
+  margin: 0;
+  padding: 25px;
+}
