@@ -33,6 +33,7 @@ main {
 
 footer {
   border: 1px solid wheat;
+  text-align: center;
 }
 
 .caixa_botoes {
@@ -40,5 +41,5 @@ footer {
   padding: 25px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  border-bottom-width: 3px;
+  border-bottom-width: 5px;
 }
