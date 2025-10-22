@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(230, 230, 250); /* Lavanda */
+}
+
+header {
+  background-color: rgb(216, 191, 216); /* Ameixa claro */
+}
+
+main {
+  background-color: rgb(221, 160, 221); /* Orquídea média */
+}
+
+footer {
+  background-color: rgb(238, 130, 238); /* Violeta */
+}
+
+nav {
+  background-color: rgb(216, 191, 216); /* Ameixa claro */
+}
+
+a {
+  /*display:block;*/
+}
+
+.menu-home {
+  right: 50px;
+  bottom: 50px;
+  position: fixed;
+}
+
+main {
+  background-color: rgb(221, 160, 221); /* Orquídea média */
+}
+
+div {
+  border: 0.2px solid rgb(138, 43, 226); /* Azul violeta */
+}
+
+.colunas {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 300px;
+  margin: auto;
+}
+.card-header {
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgb(186, 85, 211); /* Orquídea escura */
+  padding: 5px;
+  text-align: center;
+}
+.card-body {
+  height: 120px;
+  position: relative;
+  bottom: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgb(218, 112, 214); /* Rosa violeta */
+  padding: 5px;
+}
