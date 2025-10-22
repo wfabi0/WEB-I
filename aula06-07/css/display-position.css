@@ -46,6 +46,7 @@ div {
   width: 300px;
   margin: auto;
 }
+
 .card-header {
   height: 50px;
   border-top-left-radius: 15px;
@@ -54,6 +55,7 @@ div {
   padding: 5px;
   text-align: center;
 }
+
 .card-body {
   height: 120px;
   position: relative;
