@@ -1,21 +1,21 @@
 body {
-  background-color: rgb(245, 216, 233); /* Lavanda */
+  background-color: rgb(245, 216, 233);
 }
 
 header {
-  background-color: rgb(216, 191, 216); /* Ameixa claro */
+  background-color: rgb(216, 191, 216);
 }
 
 main {
-  background-color: rgb(221, 160, 221); /* Orquídea média */
+  background-color: rgb(221, 160, 221);
 }
 
 footer {
-  background-color: rgb(238, 130, 238); /* Violeta */
+  background-color: rgb(238, 130, 238);
 }
 
 nav {
-  background-color: rgb(216, 191, 216); /* Ameixa claro */
+  background-color: rgb(216, 191, 216);
 }
 
 a {
@@ -30,11 +30,11 @@ a {
 }
 
 main {
-  background-color: rgb(221, 160, 221); /* Orquídea média */
+  background-color: rgb(221, 160, 221);
 }
 
 div {
-  border: 0.2px solid rgb(138, 43, 226); /* Azul violeta */
+  border: 0.2px solid rgb(138, 43, 226);
 }
 
 .colunas {
@@ -50,7 +50,7 @@ div {
   height: 50px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: rgb(186, 85, 211); /* Orquídea escura */
+  background-color: rgb(186, 85, 211);
   padding: 5px;
   text-align: center;
 }
@@ -60,6 +60,6 @@ div {
   bottom: 15px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: rgb(218, 112, 214); /* Rosa violeta */
+  background-color: rgb(218, 112, 214);
   padding: 5px;
 }
