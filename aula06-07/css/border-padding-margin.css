@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
 body {
   /* Desnecessário configurar separado */
   border-top-width: 2px;
@@ -17,29 +19,39 @@ body {
   margin: 0;
   padding: 0px;
 
-  background-image: url("https://wallpapers.com/images/featured/imagem-de-fundo-yeaxrij2aepc1xio.jpg");
+  background-image: url("../imagem/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
   border: 0.4px solid gray;
+  background-color: #091ba4;
 }
 
 * {
-  color: white;
+  font-family: "Fira Code", monospace;
 }
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 main {
   /* border: 1px solid burlywood; */
   margin: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 footer {
   border: 1px solid wheat;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .caixa_botoes {
@@ -48,4 +60,11 @@ footer {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-width: 5px;
+}
+
+button:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
 }
