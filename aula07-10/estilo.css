@@ -22,7 +22,7 @@ img {
 .dois-filhos {
   display: flex;
   border: 3px solid black;
-  background-color: burlywood;
+  background-color: rgb(222, 160, 135);
 }
 
 .dois-filhos div {
@@ -56,8 +56,24 @@ img {
   width: 19%;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(255, 209, 149);
+}
+
+footer section {
+  width: 28%;
+}
+
 /* Texto */
 header h1 {
   font-size: 4em;
   color: aliceblue;
+}
+
+/* Links */
+footer a {
+  display: block;
 }
