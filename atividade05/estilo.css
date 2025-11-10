@@ -1,0 +1,67 @@
+body {
+  background: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+  background: #4682b4;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+#titulo {
+  color: #222;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+.destaque {
+  border: 1px solid #4682b4;
+  margin: 20px;
+  padding: 10px;
+  background: #fff;
+}
+
+.caixa-imagem {
+  background: #ccc
+    url("https://images.unsplash.com/photo-1491466424936-e304919aada7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=869")
+    center/cover;
+  height: 200px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.item {
+  border: 1px solid #222;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.grid {
+  display: flex;
+}
+
+.rodape {
+  background: #4682b4;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+.texto {
+  color: #444;
+  font-size: 1em;
+}
