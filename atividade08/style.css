@@ -1,0 +1,38 @@
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: black;
+  font-family: "Bangers", "Slackey", "Orbitron", sans-serif;
+  color: white;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  justify-content: center;
+  display: flex;
+}
+
+.card img {
+  height: 30%;
+  border: 2px solid orange;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* .card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
