@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Slackey&family=Orbitron&display=swap"
         rel="stylesheet">
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -18,13 +19,13 @@
 
     <main class="card-container">
         <div class="card-grid-top">
-            <button class="card">
+            <button class="card" id="card1" onclick="clearCard('card1')">
                 <img src="./public/R.jpg" alt="Carta Oculta">
             </button>
-            <button class="card">
+            <button class="card" id="card2" onclick="clearCard('card2')">
                 <img src="./public/R.jpg" alt="Carta Oculta">
             </button>
-            <button class="card">
+            <button class="card" id="card3" onclick="clearCard('card3')">
                 <img src="./public/R.jpg" alt="Carta Oculta">
             </button>
         </div>
@@ -32,17 +33,19 @@
         <hr style="border-color: orange; margin: 20px 0; opacity: 0.5;">
 
         <div class="card-grid-bottom">
-            <img src="./public/dada.png" alt="Carta">
-            <img src="./public/fabin.png" alt="Carta">
-            <img src="./public/Hafael Gunhaes.png" alt="Carta">
-            <img src="./public/Jao Pedro.png" alt="Carta">
-            <img src="./public/Julhiynha.png" alt="Carta">
+            <img onclick="updateCard('./public/dada.png')" src="./public/dada.png" alt="Carta" id="card4">
+            <img onclick="updateCard('./public/fabin.png')" src="./public/fabin.png" alt="Carta" id="card5">
+            <img onclick="updateCard('./public/Hafael Gunhaes.png')" src="./public/Hafael Gunhaes.png" alt="Carta"
+                id="card6">
+            <img onclick="updateCard('./public/Jao Pedro.png')" src="./public/Jao Pedro.png" alt="Carta" id="card7">
+            <img onclick="updateCard('./public/Julhiynha.png')" src="./public/Julhiynha.png" alt="Carta" id="card8">
 
-            <img src="./public/luise.png" alt="Carta">
-            <img src="./public/n grita.png" alt="Carta">
-            <img src="./public/Pedro Quilombos.png" alt="Carta">
-            <img src="./public/rosinas.png" alt="Carta">
-            <img src="./public/Victor.png" alt="Carta">
+            <img onclick="updateCard('./public/luise.png')" src="./public/luise.png" alt="Carta" id="card9">
+            <img onclick="updateCard('./public/n grita.png')" src="./public/n grita.png" alt="Carta" id="card10">
+            <img onclick="updateCard('./public/Pedro Quilombos.png')" src="./public/Pedro Quilombos.png" alt="Carta"
+                id="card11">
+            <img onclick="updateCard('./public/rosinas.png')" src="./public/rosinas.png" alt="Carta" id="card12">
+            <img onclick="updateCard('./public/Victor.png')" src="./public/Victor.png" alt="Carta" id="card13">
         </div>
     </main>
 
