@@ -17,6 +17,10 @@ function testeArrays() {
   v.forEach((e, i) => {
     console.log(i + ": " + v);
   });
+  const v2 = v.map((v, i) => {
+    return `Frutas ${i + " - " + v}`;
+  });
+  console.table(v2);
 }
 
 testeArrays();
