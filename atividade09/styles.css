@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 20px;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  background-color: bisque;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.main-title,
+.section-title {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.cadastro-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .cadastro-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+.form-input:focus {
+  outline: 1px solid #333;
+}
+
+.submit-button-container {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: white;
+}
+
+.submit-button svg {
+  display: none;
+}
+
+.table-section {
+  margin-top: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+  border: 1px solid #ccc;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header th {
+  padding: 8px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.data-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+}
+
+.delete-button {
+  background-color: #fdd;
+  color: #a00;
+  padding: 4px 8px;
+  border: 1px solid #a00;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #fcc;
+}
+
+.hidden-sm,
+.hidden-md,
+.hidden-lg {
+  display: table-cell;
+}
+
+@media (max-width: 900px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+.empty-table-message td {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
