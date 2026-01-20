@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>UAN - Cadastro (fetch)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Compra de Tickets - UAN (fetch)</h1>
+            <div id="msg"></div>
+            <form id="form">
+                <label>RA (7 dígitos)
+                    <input type="text" id="ra" maxlength="7" required pattern="\d{7}">
+                </label>
+                <label>Nome Completo
+                    <input type="text" id="nome" required>
+                </label>
+                <div class="row">
+                    <div class="col">
+                        <label>Quantidade de Tickets
+                            <input type="number" id="quantidade" min="0" value="1" required>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>Forma de Pagamento
+                            <select id="pagamento">
+                                <option value="pix">PIX</option>
+                                <option value="dinheiro">Dinheiro</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+
+            <h2>Lista de Alunos</h2>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>RA</th>
+                        <th>Nome</th>
+                        <th>Qtd</th>
+                        <th>Pagamento</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        async function fetchList() {
+            const res = await fetch('api.php');
+            const data = await res.json();
+            const tbody = document.querySelector('#table tbody');
+            tbody.innerHTML = '';
+            if (!data.data || data.data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4">Nenhum registro</td></tr>';
+                return;
+            }
+            for (const r of data.data) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${r.ra}</td><td>${r.nome}</td><td>${r.quantidade}</td><td>${r.pagamento}</td>`;
+                tbody.appendChild(tr);
+            }
+        }
+
+        document.getElementById('form').addEventListener('submit', async e => {
+            e.preventDefault();
+            const payload = {
+                ra: document.getElementById('ra').value.trim(),
+                nome: document.getElementById('nome').value.trim(),
+                quantidade: document.getElementById('quantidade').value,
+                pagamento: document.getElementById('pagamento').value
+            };
+            const msg = document.getElementById('msg');
+            try {
+                const res = await fetch('api.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                    msg.innerHTML = '<div class="error">' + (data.errors ? data.errors.join('<br>') : (data.error || 'Erro')) + '</div>';
+                } else {
+                    msg.innerHTML = '<div class="success">Salvo com sucesso</div>';
+                    document.getElementById('form').reset();
+                    fetchList();
+                }
+            } catch (err) {
+                msg.innerHTML = '<div class="error">Erro na requisição</div>';
+            }
+        });
+
+        fetchList();
+    </script>
+</body>
+
+</html>
