@@ -1,7 +1,7 @@
 <?php
 
-require_once './proteger.php';
-require_once './conexao.php';
+require_once '../proteger.php';
+require_once '../conexao.php';
 
 $nome = $_SESSION['funcionario_nome'];
 $mensagem = '';
@@ -33,23 +33,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Funcionário - Lanchonete Ota's</title>
-    <link rel="stylesheet" href="assets/css/painel.css">
-    <link rel="stylesheet" href="assets/css/crud.css">
+    <link rel="stylesheet" href="../assets/css/painel.css">
+    <link rel="stylesheet" href="../assets/css/crud.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <a href="painel.php" style="text-decoration: none; color: inherit;"><h1>🍔 Lanchonete Ota's</h1></a>
+            <a href="../painel.php" style="text-decoration: none; color: inherit;"><h1>🍔 Lanchonete Ota's</h1></a>
             <nav>
                 <span>👤 <?= htmlspecialchars($nome) ?></span>
-                <a href="sair.php">🚪 Sair</a>
+                <a href="../sair.php">🚪 Sair</a>
             </nav>
         </div>
     </header>
 
     <div class="container">
         <div style="margin-bottom: 20px;">
-            <a href="funcionarios.php" class="btn-voltar" style="padding: 8px 16px; text-decoration: none; background: #667eea; color: white; border-radius: 5px; font-size: 14px; display: inline-block;">⬅️ Voltar</a>
+            <a href="funcionarios.php" class="btn-voltar" style="padding: 8px 16px; text-decoration: none; background: #FF9500; color: white; border-radius: 5px; font-size: 14px; display: inline-block;">⬅️ Voltar</a>
         </div>
         <div class="form-container">
             <h2>➕ Novo Funcionário</h2>

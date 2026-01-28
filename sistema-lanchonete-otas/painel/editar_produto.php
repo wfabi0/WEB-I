@@ -1,7 +1,7 @@
 <?php
 
-require_once './proteger.php';
-require_once './conexao.php';
+require_once '../proteger.php';
+require_once '../conexao.php';
 
 $nome = $_SESSION['funcionario_nome'];
 $mensagem = '';
@@ -47,16 +47,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Produto - Lanchonete Ota's</title>
-    <link rel="stylesheet" href="assets/css/painel.css">
-    <link rel="stylesheet" href="assets/css/crud.css">
+    <link rel="stylesheet" href="../assets/css/painel.css">
+    <link rel="stylesheet" href="../assets/css/crud.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <a href="painel.php" style="text-decoration: none; color: inherit;"><h1>🍔 Lanchonete Ota's</h1></a>
+            <a href="../painel.php" style="text-decoration: none; color: inherit;"><h1>🍔 Lanchonete Ota's</h1></a>
             <nav>
                 <span>👤 <?= htmlspecialchars($nome) ?></span>
-                <a href="sair.php">🚪 Sair</a>
+                <a href="../sair.php">🚪 Sair</a>
             </nav>
         </div>
     </header>

@@ -79,5 +79,6 @@ $funcionarios = buscaTodosFuncionarios();
     <footer>
         <p>&copy; 2026 Lanchonete Ota's. Todos os direitos reservados.</p>
     </footer>
+    <script src="../assets/js/utils.js"></script>
 </body>
 </html>

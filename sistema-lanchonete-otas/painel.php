@@ -34,19 +34,19 @@ $nome = $_SESSION['funcionario_nome'];
         <h3 class="menu-title">📋 Menu Principal</h3>
         
         <div class="menu-box">
-            <a href="funcionarios.php" class="menu-item">
+            <a href="painel/funcionarios.php" class="menu-item">
                 <div class="icon">👥</div>
                 <h2>Funcionários</h2>
                 <p>Gerenciar usuários do sistema</p>
             </a>
 
-            <a href="produtos.php" class="menu-item">
+            <a href="painel/produtos.php" class="menu-item">
                 <div class="icon">📦</div>
                 <h2>Produtos</h2>
                 <p>Gerenciar cardápio e estoque</p>
             </a>
 
-            <a href="vendas.php" class="menu-item">
+            <a href="painel/vendas.php" class="menu-item">
                 <div class="icon">💰</div>
                 <h2>Vendas</h2>
                 <p>Registrar e acompanhar vendas</p>

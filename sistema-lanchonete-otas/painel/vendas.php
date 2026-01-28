@@ -1,7 +1,7 @@
 <?php
 
-require_once './proteger.php';
-require_once './conexao.php';
+require_once '../proteger.php';
+require_once '../conexao.php';
 
 $nome = $_SESSION['funcionario_nome'];
 $vendas = buscaTodasVendas();
@@ -13,16 +13,16 @@ $vendas = buscaTodasVendas();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendas - Lanchonete Ota's</title>
-    <link rel="stylesheet" href="assets/css/painel.css">
-    <link rel="stylesheet" href="assets/css/crud.css">
+    <link rel="stylesheet" href="../assets/css/painel.css">
+    <link rel="stylesheet" href="../assets/css/crud.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <a href="painel.php" style="text-decoration: none; color: inherit;"><h1>🍔 Lanchonete Ota's</h1></a>
+            <a href="../painel.php" style="text-decoration: none; color: inherit;"><h1>🍔 Lanchonete Ota's</h1></a>
             <nav>
                 <span>👤 <?= htmlspecialchars($nome) ?></span>
-                <a href="sair.php">🚪 Sair</a>
+                <a href="../sair.php">🚪 Sair</a>
             </nav>
         </div>
     </header>
@@ -30,7 +30,7 @@ $vendas = buscaTodasVendas();
     <div class="container">
         <div class="page-header">
             <div style="display: flex; align-items: center; gap: 10px;">
-                <a href="painel.php" class="btn-voltar" style="padding: 8px 16px; text-decoration: none; background: #FF9500; color: white; border-radius: 5px; font-size: 14px;">⬅️ Voltar</a>
+                <a href="../painel.php" class="btn-voltar" style="padding: 8px 16px; text-decoration: none; background: #FF9500; color: white; border-radius: 5px; font-size: 14px;">⬅️ Voltar</a>
                 <h2>🛒 Vendas</h2>
             </div>
             <a href="criar_venda.php" class="btn-novo">➕ Nova Venda</a>
@@ -76,5 +76,6 @@ $vendas = buscaTodasVendas();
     <footer>
         <p>&copy; 2026 Lanchonete Ota's. Todos os direitos reservados.</p>
     </footer>
+    <script src="../assets/js/utils.js"></script>
 </body>
 </html>

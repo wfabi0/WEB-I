@@ -9,6 +9,7 @@ $produtos = buscaTodosProdutos();
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +17,13 @@ $produtos = buscaTodosProdutos();
     <link rel="stylesheet" href="../assets/css/painel.css">
     <link rel="stylesheet" href="../assets/css/crud.css">
 </head>
+
 <body>
     <header>
         <div class="header-content">
-            <a href="../painel.php" style="text-decoration: none; color: inherit;"><h1>🍔 Lanchonete Ota's</h1></a>
+            <a href="../painel.php" style="text-decoration: none; color: inherit;">
+                <h1>🍔 Lanchonete Ota's</h1>
+            </a>
             <nav>
                 <span>👤 <?= htmlspecialchars($nome) ?></span>
                 <a href="../sair.php">🚪 Sair</a>
@@ -80,5 +84,7 @@ $produtos = buscaTodosProdutos();
     <footer>
         <p>&copy; 2026 Lanchonete Ota's. Todos os direitos reservados.</p>
     </footer>
+    <script src="../assets/js/utils.js"></script>
 </body>
+
 </html>
